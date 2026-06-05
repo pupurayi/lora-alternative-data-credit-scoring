@@ -1,0 +1,100 @@
+{
+  "metrics": {
+    "AUC-ROC": {
+      "Logistic Regression": 0.766,
+      "XGBoost": 0.759,
+      "LSTM": 0.755,
+      "LoRA-DistilBERT (r=8)": 0.757
+    },
+    "Accuracy": {
+      "Logistic Regression": 0.591,
+      "XGBoost": 0.685,
+      "LSTM": 0.719,
+      "LoRA-DistilBERT (r=8)": 0.673
+    },
+    "Precision": {
+      "Logistic Regression": 0.058,
+      "XGBoost": 0.067,
+      "LSTM": 0.071,
+      "LoRA-DistilBERT (r=8)": 0.065
+    },
+    "Recall": {
+      "Logistic Regression": 0.816,
+      "XGBoost": 0.724,
+      "LSTM": 0.684,
+      "LoRA-DistilBERT (r=8)": 0.732
+    },
+    "F1": {
+      "Logistic Regression": 0.108,
+      "XGBoost": 0.122,
+      "LSTM": 0.129,
+      "LoRA-DistilBERT (r=8)": 0.12
+    },
+    "KS": {
+      "Logistic Regression": 0.4,
+      "XGBoost": 0.407,
+      "LSTM": 0.405,
+      "LoRA-DistilBERT (r=8)": 0.404
+    },
+    "Trainable Params": {
+      "Logistic Regression": "87",
+      "XGBoost": "9,000",
+      "LSTM": "209,537",
+      "LoRA-DistilBERT (r=8)": "68,097"
+    },
+    "Train Time (s)": {
+      "Logistic Regression": 3.7,
+      "XGBoost": 4.0,
+      "LSTM": 39.5,
+      "LoRA-DistilBERT (r=8)": 135.7
+    }
+  },
+  "fairness": {
+    "DPD": {
+      "Gender (F vs M)": 0.014,
+      "Location (Urban vs Rural)": 0.112,
+      "Employment (Formal vs Inf)": 0.475,
+      "Age (36-50 vs 18-25)": 0.004,
+      "Income (Q4 vs Q1)": 0.163
+    },
+    "EOD": {
+      "Gender (F vs M)": 0.08,
+      "Location (Urban vs Rural)": 0.105,
+      "Employment (Formal vs Inf)": 0.647,
+      "Age (36-50 vs 18-25)": 0.016,
+      "Income (Q4 vs Q1)": 0.143
+    },
+    "DIR": {
+      "Gender (F vs M)": 0.959,
+      "Location (Urban vs Rural)": 0.709,
+      "Employment (Formal vs Inf)": 0.022,
+      "Age (36-50 vs 18-25)": 0.989,
+      "Income (Q4 vs Q1)": 0.573
+    },
+    "Status": {
+      "Gender (F vs M)": "Fair \u2713",
+      "Location (Urban vs Rural)": "Unfair \u2717",
+      "Employment (Formal vs Inf)": "Unfair \u2717",
+      "Age (36-50 vs 18-25)": "Fair \u2713",
+      "Income (Q4 vs Q1)": "Unfair \u2717"
+    }
+  },
+  "feature_importance": {
+    "freq_q25": 0.22474408149719238,
+    "freq_q75": 0.20794008672237396,
+    "employ_informal": 0.20337285101413727,
+    "location": 0.05719069018959999,
+    "ut_rate_min": 0.05243407562375069,
+    "ut_rate_max": 0.049918197095394135,
+    "savings_max": 0.04397997260093689,
+    "employ_formal": 0.037737295031547546,
+    "consist_mean": 0.03758492320775986,
+    "inc_q1": 0.03740052878856659,
+    "freq_max": 0.028273042291402817,
+    "freq_cv": 0.025008922442793846,
+    "savings_last6": 0.023492416366934776,
+    "consist_q25": 0.02244153991341591,
+    "ut_rate_last6": 0.0219508558511734
+  },
+  "timestamp": "2026-06-05T10:14:07.368509"
+}
